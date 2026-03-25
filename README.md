@@ -87,21 +87,19 @@ Trained multiple models:
 
 ### 5. Model Optimization
 
-* Handled class imbalance using `scale_pos_weight`
+* Handled class imbalance using `class weight=balanced`
 * Tuned hyperparameters
 * Adjusted prediction threshold for better recall
 
 ---
 
-## 🚀 Deployment (FastAPI)
+## 🚀 Deployment
 
-### API Features:
+The model is deployed using **FastAPI** and hosted on **Render** for real-time inference.
 
-* Accepts customer data in encoded format
-* Returns:
-
-  * Prediction (Churn / Not Churn)
-  * Churn probability
+🔗 **Live Demo:**
+👉 https://cust-churn-prediction.onrender.com
+👉 https://cust-churn-prediction.onrender.com/docs
 
 ---
 
@@ -113,6 +111,7 @@ Trained multiple models:
 * XGBoost
 * FastAPI
 * Uvicorn
+* Render (Deployment)
 
 ---
 
@@ -202,7 +201,7 @@ cd Cust-Churn-Prediction
 pip install -r requirements.txt
 ```
 
-### 3. Run API
+### 3. Run API locally
 
 ```bash
 uvicorn app:app --reload
@@ -221,21 +220,21 @@ http://127.0.0.1:8000/docs
 * End-to-end ML pipeline
 * Model comparison and optimization
 * Real-time prediction using FastAPI
-* Handles class imbalance effectively
+* Deployed on Render (cloud)
 * Production-ready API design
 
 ---
 
 ## 💼 Resume Description
 
-> Developed an end-to-end Customer Churn Prediction system using XGBoost achieving ROC-AUC of 0.85. Implemented feature engineering, handled class imbalance, and deployed a FastAPI-based REST API for real-time predictions.
+> Developed an end-to-end Customer Churn Prediction system using XGBoost achieving ROC-AUC of 0.85. Implemented feature engineering, handled class imbalance, and deployed a FastAPI-based REST API on Render for real-time predictions.
 
 ---
 
 ## 🚀 Future Improvements
 
 * Add frontend (React / Streamlit)
-* Deploy on cloud (Render / AWS)
+* Deploy on AWS (EC2 / S3)
 * Add model monitoring & logging
 * Convert to full ML pipeline
 
